@@ -28,3 +28,4 @@ let a = 2 + +string;
 console.log(a);
 
 console.log('MacOS 2');
+console.log('MacOS 2');
