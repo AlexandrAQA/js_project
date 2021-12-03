@@ -13,7 +13,7 @@
 "Вы киноман". А если не подошло ни к одному варианту - "Произошла ошибка"
 4) Потренироваться и переписать цикл еще двумя способами*/
 'use strict';
-let numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
 const personalMovieDB = {
     count: numberOfFilms,
     movies: {},
@@ -21,18 +21,6 @@ const personalMovieDB = {
     genres: [],
     privat: false
 };
-
-for (let it = 0; it < 1; it++){
-if(personalMovieDB.count < 10 && personalMovieDB.count != null && personalMovieDB.count > 0){
-    console.log("Просмотрено довольно мало фильмов");
-} else if (personalMovieDB.count >= 10 && personalMovieDB.count <= 30 ){
-    console.log("Вы классический зритель");
-} else if (personalMovieDB.count > 30 ){
-    console.log("Вы киноман");
-} else {
-    console.log('Error: the number of your films incorrect');
-}
-}
 
 let a;
 let b;
@@ -46,5 +34,16 @@ for(let i = 0; i < 2; i++){
     } else {
         console.log('Incorrect data, please try again');
         i--;
-    }
-console.log(personalMovieDB);};
+    }}
+
+if(personalMovieDB.count < 10){
+    console.log("Просмотрено довольно мало фильмов");
+} else if (personalMovieDB.count >= 10 && personalMovieDB.count <= 30 ){
+    console.log("Вы классический зритель");
+} else if (personalMovieDB.count > 30 ){
+    console.log("Вы киноман");
+} else {
+    console.log('Error');
+}
+console.log(personalMovieDB);
+   
