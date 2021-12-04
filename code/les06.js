@@ -7,6 +7,25 @@ console.log('Hi JS');
 console.log('Hi javaScript');
 console.log('Hi everyone');
 
+
+let x = 0.3 - 0.2;
+let y = 0.35 - 0.25;
+console.log(x===y); // true!
+
+let x1 = 0.3 - 0.2;
+let y1 = 0.4 - 0.3;
+console.log(x1===y1); // false!
+
+let x2 = 2.4 - 2.3;
+let y2 = 3.4 - 3.3;
+console.log(x2===y2); // true!
+
+let x3 = 2.4 - 2.3;
+let y3 = 0.4 - 0.3;
+console.log(x3===y3); // false!
+
+
+
 const a = "Ivan";
 const obj = {
     name: 'John',
