@@ -31,3 +31,15 @@ console.log('MacOS 2');
 console.log('MacOS 2');
 console.log('MacOS 2');
 console.log('MacOS 2');
+
+let nul = null;
+let underf = undefined;
+console.log(typeof(nul)); // object
+console.log(typeof(underf)); //underfined
+console.log(nul == underf); //true
+console.log(nul === underf); //false
+
+const arr1 = [];
+const arr2 = [];
+console.log(arr1 === arr2); //false
+console.log(arr1 == arr2);  //false
